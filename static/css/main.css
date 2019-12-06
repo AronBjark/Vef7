@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+}
+
+body {
+    background-color: white
+}
+
+
+:root {
+    --main-color: #ab00fa;
+    --main-text-color: black;
+    --main-text-color-alt: white;
+    --shadow-blur: 2px;
+}
+
+a {
+    color: var(--main-text-color-alt);
+}
+
+h1 {
+    color: var(--main-color);
+}
+
+.center_text {
+    text-align: center;
+}
+
+
+.center {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.container {
+    padding: 50px 0;
+    margin: 20px 25%;
+    border: solid 3px var(--main-color);
+    border-radius: 100px;
+    
+    background-color: var(--main-text-color-alt);
+}
+  
+input[type=submit] {
+    font-size: 18px;
+    width: 60%;
+    background-color: var(--main-color);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.press {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+input[type=text], input[type=password], select {
+    font-size: large;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: box-shadow .3s;
+}
+
+

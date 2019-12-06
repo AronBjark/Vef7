@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="container center_text">
+      <form action="" method="post">
+         <p><input type="text" name="username" maxlength="32" placeholder="Notanda Nafn" required></p>
+         <p><input type="text" name="name" maxlength="32" placeholder="Þitt Nafn boo <3 " required></p>
+         <p><input type="text" name="password" maxlength="32" minlength="4" placeholder="Lykilorð" required></p>
+         <p><input type="submit" value="Create User"></p>
+      </form>
+      {% if error == True %}
+         <p>OOF Það er verið að nota þetta nafn, vertu aðeins meira original bby </p>
+      {% else %}
+         <p></p>
+      {% endif %}
+   </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container center_text">
+        {% if user['name'] != "none" %}
+            <h3>Þú ert {{ user['username'] }} eða {{user['name']}}</h3>
+            <h4>Ég veit það er rétt því ég er heckin smort, eða vefsíða 50/50</h4>
+            <a href="/logout" class="press" style="color:#ffffff;">Útskrá</a>
+        {% else %}
+            <a href="/login" class="press" style="color:#ffffff;">Innskrá</a>
+            <a href="/newuser" class="press" style="color:#ffffff;">Nýr Notandi</a>
+        {% endif %}
+    </div>
+{% endblock %}
